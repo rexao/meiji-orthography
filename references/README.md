@@ -66,7 +66,7 @@ for p in json.load(sys.stdin)["list"]:
 
 ## 3. 国語調査委員会『送假名法』
 
-- 書誌: 国語調査委員会『送假名法』（1907、明治 40 年）。当時「比較的広く使われた」送り仮名の標準
+- 書誌: 国語調査委員会『送假名法』（1907、明治 40 年）
 - 原本: https://dl.ndl.go.jp/pid/992577 （NDL、パブリックドメイン。35 コマ）
 - OCR: https://lab.ndl.go.jp/dl/api/book/fulltext-json/992577
 - ファイル名:
