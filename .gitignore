@@ -1,0 +1,6 @@
+# Reference materials are not redistributed (copyright, size).
+# See references/README.md for citations and download URLs.
+references/*
+!references/README.md
+
+.DS_Store
