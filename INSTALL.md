@@ -1,7 +1,7 @@
-# インストール手順（受け取った側の Claude Code 向け）
+# インストール手順（受け取った側のエージェント向け）
 
 日本語のメッセージへの回答を、明治後期の新聞の表記で書かせるプロンプト。
-`~/.claude/CLAUDE.md` には import の 1 行だけを書き、中身はこのリポジトリに置いたまま使う。
+エージェントのユーザー単位の指示ファイルから `STYLE.md` を読み込み、中身はこのリポジトリに置いたまま使う。
 
 ## 中身
 
@@ -19,17 +19,15 @@
    git clone https://github.com/rexao/meiji-orthography.git
    ```
 
-3. `~/.claude/CLAUDE.md` に次の 1 行を足す。既に「会話の表記」に当たる節があれば、その節を消してこの行に置き換える
-
-   ```
-   @~/path/to/meiji-orthography/STYLE.md
-   ```
+3. 自分（エージェント）のユーザー単位の指示ファイルから、`~/path/to/meiji-orthography/STYLE.md` を読み込むようにする。既に「会話の表記」に当たる節があれば、その節を消して置き換える
+   - 指示ファイルが別のファイルの読み込みに対応していれば、読み込みの行を足す（例: Claude Code なら `~/.claude/CLAUDE.md` に `@~/path/to/meiji-orthography/STYLE.md`）
+   - 対応していなければ、`STYLE.md` の中身を写す。この場合、「更新」の手順で写し直す必要がある
 
 4. `STYLE.md` 末尾の「例外」の列挙（Notion・Gmail・Claude Docs 等）は、元の環境で使っている出力先。受け取り側の環境に合わせて直す。直した上で更新も受け取り続けるなら、fork して管理する
 
 ## 更新
 
-clone した場所で `git pull` する。`STYLE.md` は import しているだけなので、次の会話から新しい規則が効く。
+clone した場所で `git pull` する。`STYLE.md` を読み込んでいるなら、次の会話から新しい規則が効く。中身を写したなら、写し直す。
 
 ## 根拠資料（任意）
 
