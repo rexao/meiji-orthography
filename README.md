@@ -31,6 +31,8 @@ https://github.com/rexao/meiji-orthography/blob/main/INSTALL.md を読んで、�
 
 エージエントが [`INSTALL.md`](INSTALL.md) の手順に從ひ、規則の本體の [`STYLE.md`](STYLE.md) を、自分の指示ファイルから讀み込む樣に設定する。
 
+Web 版の Claude の樣に、エージエントが自分の設定を書き換へられない所では、[`STYLE.md`](STYLE.md) の中身を、設定（個人設定やプロジエクトの指示）に貼る。
+
 ## 參考文獻
 
 - 原科有里（2022）「新聞における漢字表記の減少過程」『藝文研究』123: 1900 年の新聞の機能語の表記
